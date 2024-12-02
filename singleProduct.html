@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce-ByJayesh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#">
+        <img src="Images/logo.png" alt="logo" class="logo" />
+      </a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Shop.html" class="active">Shop</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li>
+            <a href="Cart.html" id="lg-bag">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
+          <a href="#" id="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="Htmls/Cart.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+
+    <section id="productDetails" class="section-p1">
+      <div class="single-pro-img">
+        <img src="Images/products/f1.jpg" alt="" width="100%" id="MainImg" />
+
+        <div class="sm-img-group">
+          <div class="img-col">
+            <img src="Images/products/f1.jpg" alt=""" class="small-img"
+            width="100%">
+          </div>
+          <div class="img-col">
+            <img src="Images/products/f3.jpg" alt=""" class="small-img"
+            width="100%">
+          </div>
+          <div class="img-col">
+            <img src="Images/products/f4.jpg" alt=""" class="small-img"
+            width="100%">
+          </div>
+          <div class="img-col">
+            <img src="Images/products/f5.jpg" alt=""" class="small-img"
+            width="100%">
+          </div>
+        </div>
+      </div>
+
+      <div class="single-pro-details">
+        <h6>Home / T-Shirt</h6>
+        <h4>Men's Fashion T-shirt</h4>
+        <h2>$78</h2>
+
+        <select>
+          <option>Size</option>
+          <option>XL</option>
+          <option>XXL</option>
+          <option>Small</option>
+          <option>Large</option>
+        </select>
+
+        <div class="counter-products">
+          <div class="Counter">
+            <button id="increment" onclick="incrementCount()" class="BtnValue">
+              +
+            </button>
+            <input type="text" readonly value="1" id="Input-addProduct" />
+            <button id="decrement" onclick="decrementCount()" class="BtnValue">
+              -
+            </button>
+          </div>
+          <button class="toCard">Add To Card</button>
+        </div>
+
+        <div class="description">
+          <h4>Product Details</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum esse
+            laboriosam quas, pariatur totam modi impedit alias dignissimos
+            repellat reprehenderit. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Minima, repudiandae. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Qui libero consequatur at veritatis
+            magni modi cupiditate rem laudantium quasi Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Fugiat, voluptates? Voluptate
+            exercitationem reprehenderit optio accusamus mollitia dicta nobis
+            excepturi provident eos sed. Deserunt perspiciatis praesentium
+            excepturi ducimus cupiditate iste quas?sit!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="feature-products" class="section-p1">
+      <h2>Feature Products</h2>
+      <p>Summer Collection New Morden Design</p>
+
+      <div class="product-container">
+        <div class="products">
+          <img src="Images/products/n1.jpg" alt="" />
+
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="str">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+        </div>
+        <div class="products">
+          <img src="Images/products/n2.jpg" alt="" />
+
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="str">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+        </div>
+        <div class="products">
+          <img src="Images/products/n3.jpg" alt="" />
+
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="str">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+        </div>
+        <div class="products">
+          <img src="Images/products/n4.jpg" alt="" />
+
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="str">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newsText">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span> special offers.</span>
+        </p>
+      </div>
+      <div class="newsignup">
+        <input type="text" placeholder="Your E-mail Address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="foot-logo" src="Images/logo.png" alt="" />
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 041 Bus Stand Roopangarh Ajmer 305814</p>
+        <p><strong>Phone:</strong> +01 2222 361 / +91 - 9636012321</p>
+        <p><strong>Hours:</strong> 24/7 Available</p>
+
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="Images/pay/app.jpg" alt="" />
+          <img src="Images/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="Images/pay/pay.png" alt="" />
+      </div>
+
+      <div class="copyright">
+        <p>© 2024 , JayeshRewani - cerated in Html Css & Javascript</p>
+      </div>
+    </footer>
+
+    <script>
+      // single-product-page
+      // counter
+      const counterInput = document.getElementById("Input-addProduct");
+      const IncrementBtn = document.getElementById("increment");
+      const decrementBtn = document.getElementById("decrement");
+
+      let CounterValue = 1;
+      counterInput.value = CounterValue;
+
+      function incrementCount() {
+        CounterValue++;
+        counterInput.value = CounterValue;
+      }
+      function decrementCount() {
+        if (CounterValue > 1) {
+          CounterValue--;
+          counterInput.value = CounterValue;
+        }
+      }
+
+      // img change on click
+      let mainImg = document.getElementById('MainImg');
+      let allSmImg = document.querySelectorAll('.small-img')
+
+      allSmImg.forEach(
+        (img,index)=>{
+          img.addEventListener('click',()=>{
+            mainImg.src = allSmImg[index].src;
+          })
+        }
+      )
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>

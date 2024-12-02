@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce-ByJayesh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    
+    <style>
+      body {
+        scroll-behavior: smooth;
+        width: 100%;
+      }
+      #Read-blog {
+        padding: 50px 50px 0 100px;
+      }
+      #Read-blog .read-box {
+        display: flex;
+        /* flex-direction: column; */
+        width: 100%;
+        padding-bottom: 50px;
+      }
+      #Read-blog .read-box .readbg-img {
+        width: 50%;
+        margin-right: 20px;
+      }
+      #Read-blog .read-box .readbg-img img {
+        width: 100%;
+        height: 580px;
+        background-size: cover;
+        padding-bottom: 40px;
+      }
+      #Read-blog .read-box .read-post {
+        width: 50%;
+      }
+      #Read-blog .read-box .read-post h2 {
+        font-size: 70px;
+        line-height: 100px;
+        text-transform: uppercase;
+      }
+      #Read-blog .read-box .read-post .underline {
+        width: 100%;
+        height: 3px;
+        background-color: #212121d2;
+        border-radius: 4px;
+      }
+      #Read-blog .read-box .read-post p {
+        line-height: 25px;
+        font-size: 17px;
+      }
+      #Read-blog .read-box .read-post h4 {
+        font-size: 30px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      #Read-blog .read-box .read-post ul li {
+        list-style-type: circle;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
+      #Read-blog .read-box .read-post ul li a {
+        scroll-behavior: smooth;
+        text-decoration: none;
+        color: #414141;
+        letter-spacing: 1px;
+        font-size: 22px;
+        padding: 0 5px;
+        /* transform: 0.2s; */
+        transition: 0.5s;
+      }
+      #Read-blog .read-box .read-post ul li a:hover {
+        text-decoration: underline;
+        color: #088178;
+      }
+
+      /* description  */
+      #Read-blog .read-description {
+        margin-bottom: 100px;
+      }
+      #Read-blog .read-description h2 {
+        /* text-decoration: underline; */
+        letter-spacing: 1px;
+        font-size: 40px;
+      }
+      #Read-blog .read-description p {
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-size: 17px;
+      }
+      #Read-blog .read-content h2 {
+        letter-spacing: 1px;
+        font-size: 40px;
+      }
+
+      #Read-blog .read-content p {
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-size: 18px;
+      }
+      #Read-blog .read-content p span {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0;
+      }
+      #Read-blog .read-content p span img {
+        width: 50%;
+        padding: 0 10px;
+        border-radius: 15px;
+      }
+      #feature-products {
+        margin-top: 50px;
+      }
+      #feature-products #more-see {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      #feature-products h2 {
+        text-align: center;
+      }
+
+      #feature-products p {
+        text-align: center;
+        font-size: 17px;
+      }
+
+      #read-about .readab {
+        margin-bottom: 100px;
+      }
+      #read-about .readab h2 {
+        /* text-decoration: underline; */
+        letter-spacing: 1px;
+        font-size: 40px;
+      }
+      #read-about .readab p {
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-size: 17px;
+      }
+
+      @media (max-width: 799px) {
+        #Read-blog {
+          padding: 50px 50px 0 50px;
+        }
+        #Read-blog .read-box {
+          flex-direction: column;
+        }
+        #Read-blog .read-box .readbg-img {
+          width: 100%;
+        }
+        #Read-blog .read-box .read-post {
+          width: 100%;
+        }
+      }
+      @media (max-width: 499px) {
+        #Read-blog {
+          padding: 20px 20px 0 20px;
+        }
+        
+        #Read-blog .read-box .readbg-img img {
+          height: 100%;
+        }
+        #Read-blog .read-box .read-post h2 {
+          font-size: 35px;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+        #Read-blog .read-box .read-post .underline {
+          height: 1px;
+        }
+        #Read-blog .read-description h2 {
+          letter-spacing: normal;
+        }
+        
+      }
+    </style>
+
+  </head>
+  <body>
+    <section id="header">
+      <a href="#">
+        <img src="Images/logo.png" alt="logo" class="logo" />
+      </a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="Blog.html" class="active">Blog</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li>
+            <a href="Htmls/Cart.html" id="lg-bag">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
+          <a href="#" id="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="Htmls/Cart.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+
+    <section id="Read-blog">
+      <div class="read-box">
+        <div class="readbg-img">
+          <img src="Images/blog/b1.jpg" alt="" id="main-blog-img" />
+        </div>
+        <div class="read-post">
+          <h2>The Cotton-Jersey Zip Up Hoodie</h2>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
+            nam! Nostrum quasi fugit quia ea repellendus officia quidem nobis
+            id?
+          </p>
+          <h4>Bullet Points</h4>
+          <ul>
+            <li><a href="#des-box">Description</a></li>
+            <li><a href="#con-box">Content</a></li>
+            <li><a href="#feature-products">Product</a></li>
+            <li><a href="#read-about">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="read-description" id="des-box">
+        <h2>Description - Shop Products</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+          molestiae exercitationem deleniti, nemo repellat, quaerat inventore
+          aperiam aut accusantium labore dignissimos minima numquam facere!
+          Explicabo eos laboriosam excepturi id sit, vel provident accusantium
+          perspiciatis necessitatibus veritatis, vero aperiam. Labore
+          consectetur quia recusandae ullam architecto sed tempora fugiat
+          officia. Excepturi distinctio nesciunt, expedita qui nostrum inventore
+          eum aspernatur sint cum assumenda praesentium sit, mollitia ullam modi
+          iure ut? Dolorem laudantium amet dolore et numquam itaque labore
+          perspiciatis quam possimus eius? Earum quidem quod possimus odit!
+          Laborum facere quibusdam hic laboriosam quo tempora debitis sint
+          asperiores aperiam magni, accusamus error aut! Quae repellat nostrum,
+          ad omnis iste modi doloremque dolorem! Suscipit cupiditate debitis cum
+          odit. Tenetur eius ad quasi totam quisquam maiores, nam ipsum aut
+          accusantium consectetur explicabo nihil animi praesentium quia numquam
+          nisi, repellendus beatae ullam porro perferendis nesciunt aperiam
+          delectus a. Ea voluptate
+          <strong
+            >ipsum. Consectetur, neque eos voluptatem, ullam enim nulla eligendi
+            placeat laborum soluta incidunt optio?</strong
+          >
+          Ratione repellat voluptate cum rerum nemo at fugit necessitatibus, hic
+          animi aliquid facere officiis facilis dolorem aut rem veritatis sed
+          voluptatum nisi. Reiciendis temporibus necessitatibus quas quo,
+          recusandae qui soluta, tempore esse iure fuga accusamus dolorum
+          molestiae sed quasi incidunt ipsum nisi, repellendus nemo molestias
+          itaque cum officiis! Voluptatum corrupti nihil dolor quos provident,
+          repellendus molestiae dolore tempora pariatur doloribus exercitationem
+          adipisci porro recusandae magni saepe, velit illum eos corporis. Ipsam
+          magnam eaque doloremque quam temporibus architecto, nihil hic
+          laboriosam nobis ad doloribus in, nesciunt aspernatur alias
+          necessitatibus quaerat accusamus facere. Vel consequatur accusamus
+          ipsam repellat modi nulla ducimus? Dolorem ut cumque, nesciunt,
+          pariatur veniam maxime nemo cum eum ex alias officia dicta minima ab
+          aperiam amet ratione delectus odio illo quibusdam in accusamus
+          nostrum? Quasi dolorem vitae tenetur eaque quibusdam illo totam ipsam
+          molestiae! Voluptatum optio sit possimus ipsum sunt molestiae adipisci
+          ab, iure, quisquam itaque enim voluptates laudantium dicta minima sint
+          perferendis provident officia totam facere temporibus. Similique ex
+          quod omnis quaerat laborum. Nostrum, neque incidunt iure fugit maxime
+          asperiores corporis omnis, dicta sunt necessitatibus earum praesentium
+          harum. Animi, facere dolor? Deleniti odio error soluta dignissimos at
+          molestiae eligendi assumenda minima blanditiis deserunt consequatur ea
+          earum, aliquam vero iusto sit debitis quo, tempore praesentium
+          excepturi dolore fuga! Dolorem eaque neque eligendi dignissimos
+          consectetur omnis ipsum doloremque molestias quisquam, nobis ab
+          pariatur distinctio. Sapiente possimus voluptatem reiciendis adipisci
+          atque voluptates. Voluptatum officia nisi et dicta aperiam hic
+          aliquid, vero error vitae!
+          <a href="index.html">Leran More</a>
+        </p>
+      </div>
+
+      <div class="read-content" id="con-box">
+        <h2>Content - Quality Products</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
+          deserunt!
+        </p>
+
+        <p>
+          <strong>manufacturing process</strong>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In temporibus
+          accusantium velit corporis, magnam dolor magni molestiae accusamus
+          impedit corrupti voluptatibus ratione explicabo aliquam ipsam repellat
+          dolores, officia facilis natus expedita consequatur architecto maiores
+          odio. Quo possimus quam consequatur eos cumque, maiores unde
+          consectetur consequuntur suscipit modi atque ullam ipsum qui nihil
+          commodi fugiat blanditiis temporibus quas? Suscipit sapiente veritatis
+          nemo provident voluptatum quidem molestiae recusandae distinctio omnis
+          possimus laudantium labore aliquid commodi numquam id quia eveniet
+          repellendus, perferendis quae laboriosam. Vel repellat, et ipsam
+          deserunt sequi totam rerum ullam similique, laboriosam, quidem eius.
+          Eius nihil cumque eaque. Exercitationem, vero tempore eum, praesentium
+          veniam sapiente totam quibusdam quam placeat quaerat,
+          <span>
+            <img src="Images/banner/b10.jpg" alt="" />
+            <img src="Images/banner/b7.jpg" alt="" />
+          </span>
+          maxime at tenetur corrupti dolor dolores! Ab vero expedita laudantium
+          provident ipsum sequi illo ex vitae totam itaque atque animi,
+          veritatis quasi nisi dolor saepe, magni dolores exercitationem quidem?
+          Perspiciatis, voluptate rerum ullam omnis impedit reprehenderit
+          sapiente! Ex non neque nemo perferendis corporis veritatis debitis
+          inventore! Eligendi qui natus velit dignissimos quae doloribus
+          molestiae officiis a modi illo soluta, saepe laboriosam aliquid maxime
+          eaque corporis doloremque ipsa repellendus quos optio nobis
+          reprehenderit! Architecto quis minus magni itaque! Magnam nesciunt
+          dignissimos provident distinctio illum praesentium cupiditate totam
+          eligendi magni? Quisquam eius laborum reiciendis rerum, voluptate sint
+          possimus obcaecati officia accusamus quibusdam nesciunt deleniti sunt
+          maxime doloribus asperiores. Omnis repellendus autem, velit, dolor,
+          minus veritatis nostrum inventore suscipit harum placeat adipisci
+          culpa in. Explicabo, magni. Facilis commodi recusandae repudiandae
+          totam molestiae quis animi asperiores, saepe tempora ipsum dolorum eos
+          expedita est omnis dolores veniam, cum adipisci vitae beatae vel
+          eligendi! Culpa quia fuga ipsam voluptate esse hic suscipit sapiente
+          odit animi, nulla commodi quisquam aut laboriosam vel, ipsum sint
+          veniam perferendis. Exercitationem consequuntur quasi, magni sit
+          corporis fugiat vitae! Vero sed cum eligendi non ab, fuga corporis,
+          mollitia dolorum quam voluptatibus praesentium?
+          <a href="Shop.html">Products</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="feature-products" class="section-p1">
+      <h2>Products</h2>
+      <p>Ab vero expedita laudantium provident ipsum</p>
+      <div class="product-container">
+        <div
+          class="products"
+          onclick="window.location.href='singleProduct.html'"
+        >
+          <img src="Images/products/f1.jpg" alt="" />
+
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="str">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+        </div>
+
+        <div class="products">
+          <img src="Images/products/n1.jpg" alt="" />
+
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="str">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+        </div>
+        <div class="products">
+          <img src="Images/products/n2.jpg" alt="" />
+
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="str">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+        </div>
+        <div class="products">
+          <img src="Images/products/n3.jpg" alt="" />
+
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="str">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+        </div>
+      </div>
+      <a href="Shop.html" id="more-see">See more</a>
+    </section>
+
+    <section id="read-about" class="section-p1">
+      <div class="readab">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+          molestiae exercitationem deleniti, nemo repellat, quaerat inventore
+          aperiam aut accusantium labore dignissimos minima numquam facere!
+          Explicabo eos laboriosam excepturi id sit, vel provident accusantium
+          perspiciatis necessitatibus veritatis, vero aperiam. Labore
+          consectetur quia recusandae ullam architecto sed tempora fugiat
+          officia. Excepturi distinctio nesciunt, expedita qui nostrum inventore
+          eum aspernatur sint cum assumenda praesentium sit, mollitia ullam modi
+          iure ut? Dolorem laudantium amet dolore et numquam itaque labore
+          perspiciatis quam possimus eius? Earum quidem quod possimus odit!
+          Laborum facere quibusdam hic laboriosam quo tempora debitis sint
+          asperiores aperiam magni, accusamus error aut! Quae repellat nostrum,
+          ad omnis iste modi doloremque dolorem! Suscipit cupiditate debitis cum
+          odit. Tenetur eius ad quasi totam quisquam maiores, nam ipsum aut
+          accusantium consectetur explicabo nihil animi praesentium quia numquam
+          nisi, repellendus beatae ullam porro perferendis nesciunt aperiam
+          delectus a. Ea voluptate
+          <strong
+            >ipsum. Consectetur, neque eos voluptatem, ullam enim nulla eligendi
+            placeat laborum soluta incidunt optio?</strong
+          >
+          Ratione repellat voluptate cum rerum nemo at fugit necessitatibus, hic
+          animi aliquid facere officiis facilis dolorem aut rem veritatis sed
+          voluptatum nisi. Reiciendis temporibus necessitatibus quas quo,
+          recusandae qui soluta, tempore esse iure fuga accusamus dolorum
+          molestiae sed quasi incidunt ipsum nisi, repellendus nemo molestias
+          itaque cum officiis! Voluptatum corrupti nihil dolor quos provident,
+          repellendus molestiae dolore tempora pariatur doloribus exercitationem
+          adipisci porro recusandae magni saepe, velit illum eos corporis. Ipsam
+          magnam eaque doloremque quam temporibus architecto, nihil hic
+          laboriosam nobis ad doloribus in, nesciunt aspernatur alias
+          necessitatibus quaerat accusamus facere. Vel consequatur accusamus
+          ipsam repellat modi nulla ducimus? Dolorem ut cumque, nesciunt,
+          pariatur veniam maxime nemo cum eum ex alias officia dicta minima ab
+          aperiam amet ratione delectus odio illo quibusdam in accusamus
+          nostrum? Quasi dolorem vitae tenetur eaque quibusdam illo totam ipsam
+          molestiae! Voluptatum optio sit possimus ipsum sunt molestiae adipisci
+          ab, iure, quisquam itaque enim voluptates laudantium dicta minima sint
+          perferendis provident officia totam facere temporibus. Similique ex
+          quod omnis quaerat laborum. Nostrum, neque incidunt iure fugit maxime
+          asperiores corporis omnis, dicta sunt necessitatibus earum praesentium
+          harum. Animi, facere dolor? Deleniti odio error soluta dignissimos at
+          molestiae eligendi assumenda minima blanditiis deserunt consequatur ea
+          earum, aliquam vero iusto sit debitis quo, tempore praesentium
+          excepturi dolore fuga! Dolorem eaque neque eligendi dignissimos
+          consectetur omnis ipsum doloremque molestias quisquam, nobis ab
+          pariatur distinctio. Sapiente possimus voluptatem reiciendis adipisci
+          atque voluptates. Voluptatum officia nisi et dicta aperiam hic
+          aliquid, vero error vitae!
+          <a href="#">Leran More</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newsText">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span> special offers.</span>
+        </p>
+      </div>
+      <div class="newsignup">
+        <input type="text" placeholder="Your E-mail Address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="foot-logo" src="Images/logo.png" alt="" />
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 041 Bus Stand Roopangarh Ajmer 305814</p>
+        <p><strong>Phone:</strong> +01 2222 361 / +91 - 9636012321</p>
+        <p><strong>Hours:</strong> 24/7 Available</p>
+
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="Images/pay/app.jpg" alt="" />
+          <img src="Images/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="Images/pay/pay.png" alt="" />
+      </div>
+
+      <div class="copyright">
+        <p>© 2024 , JayeshRewani - cerated in Html Css & Javascript</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    let imgSrc = localStorage.getItem("selectImg");
+    if (imgSrc) {
+      document.getElementById("main-blog-img").src = imgSrc;
+      localStorage.removeItem("selectImg");
+    }
+  </script>
+  <script src="script.js"></script>
+</html>

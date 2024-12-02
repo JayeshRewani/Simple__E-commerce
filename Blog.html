@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-ByJayesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <section id="header">
+        <a href="#">
+            <img src="Images/logo.png" alt="logo" class="logo">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Blog.html" class="active">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li>
+                    <a href="Htmls/Cart.html" id="lg-bag">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+                <a href="#" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="Htmls/Cart.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+       <h2>#Readmore</h2>
+       <p>Read all core studies about our products</p>
+    </section>
+
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Images/blog/b1.jpg" alt="" onclick="SaveImg('Images/blog/b1.jpg')">
+            </div>
+
+            <div class="blog-details">
+                <h4>The Cotton-Jersey Zip Up Hoodie</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum labore nobis quibusdam vitae sapiente repellendus tenetur quae delectus quo.</p>
+                <a href="ReadBlog.html">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Images/blog/b2.jpg" alt="" onclick="SaveImg('Images/blog/b2.jpg')">
+            </div>
+
+            <div class="blog-details">
+                <h4>The Cotton-Jersey Zip Up Hoodie</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum labore nobis quibusdam vitae sapiente repellendus tenetur quae delectus quo.</p>
+                <a href="ReadBlog.html">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Images/blog/b3.jpg" alt="" onclick="SaveImg('Images/blog/b3.jpg')">
+            </div>
+
+            <div class="blog-details">
+                <h4>The Cotton-Jersey Zip Up Hoodie</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum labore nobis quibusdam vitae sapiente repellendus tenetur quae delectus quo.</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Images/blog/b4.jpg" alt=""
+                onclick="SaveImg('Images/blog/b4.jpg')"
+                >
+            </div>
+
+            <div class="blog-details">
+                <h4>The Cotton-Jersey Zip Up Hoodie</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum labore nobis quibusdam vitae sapiente repellendus tenetur quae delectus quo.</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+
+
+    </section>
+    
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newsText">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span> special offers.</span></p>
+        </div>
+        <div class="newsignup">
+            <input type="text" placeholder="Your E-mail Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+
+        <div class="col">
+            <img class="foot-logo" src="Images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 041 Bus Stand Roopangarh Ajmer 305814</p>
+            <p><strong>Phone:</strong> +01 2222 361 / +91 - 9636012321</p>
+            <p><strong>Hours:</strong> 24/7 Available</p>
+
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="Images/pay/app.jpg" alt="">
+                <img src="Images/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="Images/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 , JayeshRewani - cerated in Html Css & Javascript</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+   function SaveImg(imgSrc){
+    localStorage.setItem('selectImg', imgSrc)
+    window.location.href='ReadBlog.html'
+   }
+  </script>
+<script src="script.js"></script>
+</html>
